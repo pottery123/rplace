@@ -6,15 +6,18 @@ const HeroSection = () => (
     <div className="h-16" />{" "}
     {/* Spacer to push content below the fixed header */}
     <section
-      id="home"
-      className="h-screen w-full"
-      style={{
-        backgroundImage: `url(${imgUrl})`,
-        backgroundSize: "contain",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    />
+  id="home"
+  className="h-[500px] md:h-screen w-full flex items-center justify-center px-6 text-white"
+  style={{
+    backgroundImage: `url(${imgUrl})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  }}
+>
+  {/* Layer any content here */}
+</section>
+
     {/* 💬 Combined Info + Apply Panel */}
     <section className="bg-white py-16 px-6 text-center text-slate-800">
       <div className="max-w-3xl mx-auto">
