@@ -1,38 +1,56 @@
-import React from 'react';
-
 const ContactSection = () => {
   return (
-    <section id="contact"  className="py-20 bg-gradient-to-br from-[#335766] to-[#b1d0df] text-white">
-      <div className="max-w-4xl mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-6">Get in Touch</h2>
-        <p className="text-center text-white/90 mb-8">
-          Have questions or want to connect? Drop us a message or reach out directly.
-        </p>
+    <section id="contact" className="bg-sage-olive py-16 px-6">
+  <div className="max-w-4xl mx-auto text-center">
+    <h2 className="text-3xl font-bold text-slate-800 mb-4">Get in Touch</h2>
+    <p className="text-lg text-slate-600 mb-10">
+      Have questions or want to join the program? Reach out or apply now!
+    </p>
 
-        {/* Contact Details */}
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <div className="space-y-4 text-white/90">
-            <p><strong>📍 Address:</strong><br />Rainier Avenue Church<br />5900 Rainier Ave S, Seattle, WA 98118</p>
-            <p><strong>📧 Email:</strong><br /><a href="mailto:youthcafe@rainieravechurch.org" className="underline hover:text-pink-200">youthcafe@rainieravechurch.org</a></p>
-            <p><strong>🔗 Follow Us:</strong><br />
-              <a href="https://instagram.com/rangkhamplace" target="_blank" rel="noopener noreferrer" className="underline hover:text-pink-200">Instagram</a> · 
-              <a href="https://facebook.com/rangkhamplace" target="_blank" rel="noopener noreferrer" className="underline hover:text-pink-200 ml-2">Facebook</a>
-            </p>
-          </div>
-
-          {/* Message Form */}
-          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" className="space-y-6">
-            <input type="text" name="name" required placeholder="Your Name" className="w-full px-4 py-3 rounded-lg bg-white/20 text-white placeholder-white/70" />
-            <input type="email" name="email" required placeholder="Email" className="w-full px-4 py-3 rounded-lg bg-white/20 text-white placeholder-white/70" />
-            <textarea name="message" rows={4} required placeholder="Message" className="w-full px-4 py-3 rounded-lg bg-white/20 text-white placeholder-white/70 resize-none" />
-            <button type="submit" className="bg-red-500 hover:bg-pink-500 py-3 px-6 rounded-full font-bold text-lg transition-transform transform hover:scale-105">
-              Send Message
-            </button>
-          </form>
-        </div>
+    <div className="grid md:grid-cols-2 gap-6 text-left mb-12">
+      <div className="bg-white p-6 rounded-xl shadow-md">
+        <h3 className="text-indigo-700 font-semibold mb-2">📍 Address</h3>
+        <p>Rainier Avenue Church<br />5900 Rainier Ave S, Seattle, WA 98118</p>
       </div>
-    </section>
+
+      <div className="bg-white p-6 rounded-xl shadow-md">
+        <h3 className="text-indigo-700 font-semibold mb-2">📧 Email</h3>
+        <p>
+          <a href="mailto:youthcafe@rainieravenuechurch.org" className="text-blue-600 hover:underline">
+            youthcafe@rainieravenuechurch.org
+          </a>
+        </p>
+      </div>
+
+      <div className="bg-white p-6 rounded-xl shadow-md">
+        <h3 className="text-indigo-700 font-semibold mb-2">📱 Social Media</h3>
+        <p>
+          <a href="https://instagram.com/rangkhamyouthcafe" target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:underline">
+            Instagram
+          </a><br />
+          <a href="https://facebook.com/rangkhamyouthcafe" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+            Facebook
+          </a>
+        </p>
+      </div>
+
+      <div className="bg-white p-6 rounded-xl shadow-md">
+        <h3 className="text-indigo-700 font-semibold mb-2">📅 Program Details</h3>
+        <p>Starts September 7th, 2025<br />8:30 AM – 1:00 PM at Rainier Avenue Church</p>
+      </div>
+    </div>
+
+    <a
+      href="https://rainieravenuechurch.ccbchurch.com/goto/forms/453/responses/new"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block bg-coral-terracotta text-white text-xl font-bold py-4 px-8 rounded-full shadow-lg hover:scale-105 transition-transform"
+    >
+      APPLY NOW
+    </a>
+  </div>
+</section>
+
   );
 };
-
 export default ContactSection;

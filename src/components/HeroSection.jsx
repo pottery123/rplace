@@ -1,42 +1,86 @@
-const HeroSection = () => {
-    return (
-      <section
-        className="relative h-screen bg-center bg-cover flex items-center justify-center text-white px-6"
-        style={{
-          backgroundImage: "url('/images/hero4.jpg')" // Replace with your image path
-        }}
-      >
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/40 backdrop-blur-sm z-0"></div>
-  
-        {/* Hero Content */}
-        <div className="relative z-10 text-center max-w-3xl">
-          <h1 className="text-5xl font-bold mb-6">
-            Rangkham's Place Youth Café
-          </h1>
-  
-          <p className="text-xl md:text-2xl text-white/90 mb-6">
-            Empowering youth through a 10-week Sunday program at Rainier Avenue Church —
-            blending barista training, biblical discipleship, creative teamwork, and real-world career skills.
+import imgUrl from "/hero-image3.jpg";
+
+const HeroSection = () => (
+  <>
+    {/* 🖼️ Full-Screen Image */}
+    <div className="h-16" />{" "}
+    {/* Spacer to push content below the fixed header */}
+    <section
+      id="home"
+      className="h-screen w-full"
+      style={{
+        backgroundImage: `url(${imgUrl})`,
+        backgroundSize: "contain",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    />
+    {/* 💬 Combined Info + Apply Panel */}
+    <section className="bg-white py-16 px-6 text-center text-slate-800">
+      <div className="max-w-3xl mx-auto">
+        <h1 className="text-4xl font-bold mb-4">Rangkham's Place Youth Café</h1>
+        <p className="text-xl mb-6">
+          Empowering youth with barista skills, discipleship, and real-world
+          work experience.
+        </p>
+        <div className="text-base mb-6">
+          <p>
+            <strong>Program begins:</strong> September 7th, 2025
           </p>
-  
-          <p className="text-base md:text-lg text-white/80 mb-8">
-            <strong>Program begins:</strong> Sunday, <span className="underline">September 7th, 2025</span><br />
-            <strong>Time:</strong> 8:30 AM – 1:00 PM at Rainier Avenue Church
+          <p>
+            <strong>Time:</strong> 8:30 AM – 1:00 PM
           </p>
-  
-          <a
-            href="https://rainieravenuechurch.ccbchurch.com/goto/forms/453/responses/new"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-red-500 hover:bg-pink-500 font-bold py-4 px-8 rounded-full text-lg shadow-xl transition-transform transform hover:scale-105"
-          >
-            APPLY NOW
-          </a>
+          <p>
+            <strong>Duration:</strong> 10 weeks
+          </p>
+          <p>
+            <strong>Location:</strong> Rainier Avenue Church, Seattle, WA
+          </p>
         </div>
-      </section>
-    );
-  };
-  
-  export default HeroSection;
-  
+        <a
+          href="https://rainieravenuechurch.ccbchurch.com/goto/forms/453/responses/new"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-gradient-to-r from-coral to-terracotta text-white font-bold py-3 px-8 rounded-full shadow-md transition-transform transform hover:scale-105"
+        >
+          APPLY NOW
+        </a>
+      </div>
+    </section>
+  </>
+);
+
+export default HeroSection;
+
+// const HeroSection = () => (
+//     <section
+//       id="home"
+//       className="h-screen bg-gradient-to-br from-purple-900 via-pink-600 to-red-500 flex items-center justify-center px-6 text-white relative"
+//       style={{
+//        backgroundImage: `url(${imgUrl})`,
+//         backgroundSize: "cover",
+//         backgroundPosition: "center",
+//         backgroundBlendMode: "overlay"
+//       }}
+
+//     >
+//       <div className="bg-white text-slate-800 rounded-xl shadow-xl p-8 max-w-3xl text-center backdrop-blur-md bg-opacity-80">
+//         <h1 className="text-4xl font-bold mb-4">Rangkham's Place Youth Café</h1>
+//         <p className="text-xl mb-4">Empowering youth with barista skills, discipleship, and real-world experience.</p>
+//         <p className="text-base mb-6">
+//           <strong>Program begins:</strong> September 7th, 2025<br />
+//           <strong>Time:</strong> 8:30 AM – 1:00 PM at Rainier Avenue Church
+//         </p>
+//         <a
+//           href="https://rainieravenuechurch.ccbchurch.com/goto/forms/453/responses/new"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//           className="inline-block bg-gradient-to-r from-red-500 to-pink-500 hover:from-pink-600 hover:to-red-600 text-white font-bold py-3 px-6 rounded-full shadow-md transition-transform transform hover:scale-105"
+//         >
+//           APPLY NOW
+//         </a>
+//       </div>
+//     </section>
+//   );
+
+//   export default HeroSection;
