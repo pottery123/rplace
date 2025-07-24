@@ -31,13 +31,13 @@ const HeroSection = () => (
             <strong>Program begins:</strong> September 7th, 2025
           </p>
           <p>
-            <strong>Time:</strong> 8:30 AM – 1:00 PM
+            <strong>Time:</strong> 8:30 AM – 12:00 PM
           </p>
           <p>
             <strong>Duration:</strong> 10 weeks
           </p>
           <p>
-            <strong>Location:</strong> Rainier Avenue Church, Seattle, WA
+            <strong>Location:</strong> Rainier Avenue Church, 5900 Rainier Ave S, Seattle, WA 98118 
           </p>
         </div>
         <a

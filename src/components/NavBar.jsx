@@ -25,11 +25,11 @@ const Navbar = () => {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-6 text-charcoal font-medium">
-          <a href="#home">Home</a>
-          <a href="#overview">Program</a>
-          <a href="#video">Video</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#contact">Contact</a>
+          <a className='text-coral' href="#home">Home</a>
+          <a className='text-coral'  href="#overview">Program</a>
+          <a  className='text-coral' href="#video">Video</a>
+          <a className='text-coral' href="#gallery">Gallery</a>
+          <a className='text-coral' href="#contact">Contact</a>
         </nav>
       </div>
 
