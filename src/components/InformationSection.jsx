@@ -14,7 +14,7 @@ const InformationSection = () => (
     <div className="max-w-6xl mx-auto px-6 text-center">
       <h2 className="text-4xl font-bold mb-12">Program Overview</h2>
       <p className="text-base mb-10">
-      The 10-week program meets every Sunday from 8:30 AM to 1:00 PM at Rainier Avenue Church.
+      The 10-week program meets every Sunday from 8:30 AM to 12:00 PM at Rainier Avenue Church.
       Youth will gain hands-on barista experience, engage in biblical discipleship, and build teamwork
       through creative group projects. Along the way, they’ll develop customer service skills and strengthen
       their resumes with practical work experience. Additionally, students will receive a stipend upon
