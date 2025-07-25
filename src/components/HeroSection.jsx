@@ -10,7 +10,7 @@ const HeroSection = () => (
   className="h-[500px] md:h-screen w-full flex items-center justify-center px-6 text-white"
   style={{
     backgroundImage: `url(${imgUrl})`,
-    backgroundSize: "cover",
+    backgroundSize: "contain",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
   }}
@@ -55,35 +55,3 @@ const HeroSection = () => (
 
 export default HeroSection;
 
-// const HeroSection = () => (
-//     <section
-//       id="home"
-//       className="h-screen bg-gradient-to-br from-purple-900 via-pink-600 to-red-500 flex items-center justify-center px-6 text-white relative"
-//       style={{
-//        backgroundImage: `url(${imgUrl})`,
-//         backgroundSize: "cover",
-//         backgroundPosition: "center",
-//         backgroundBlendMode: "overlay"
-//       }}
-
-//     >
-//       <div className="bg-white text-slate-800 rounded-xl shadow-xl p-8 max-w-3xl text-center backdrop-blur-md bg-opacity-80">
-//         <h1 className="text-4xl font-bold mb-4">Rangkham's Place Youth Café</h1>
-//         <p className="text-xl mb-4">Empowering youth with barista skills, discipleship, and real-world experience.</p>
-//         <p className="text-base mb-6">
-//           <strong>Program begins:</strong> September 7th, 2025<br />
-//           <strong>Time:</strong> 8:30 AM – 1:00 PM at Rainier Avenue Church
-//         </p>
-//         <a
-//           href="https://rainieravenuechurch.ccbchurch.com/goto/forms/453/responses/new"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//           className="inline-block bg-gradient-to-r from-red-500 to-pink-500 hover:from-pink-600 hover:to-red-600 text-white font-bold py-3 px-6 rounded-full shadow-md transition-transform transform hover:scale-105"
-//         >
-//           APPLY NOW
-//         </a>
-//       </div>
-//     </section>
-//   );
-
-//   export default HeroSection;
